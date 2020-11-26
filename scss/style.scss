@@ -1,0 +1,178 @@
+$font-size-big: 52px;
+$font-size-medium: 24px;
+$font-size-small: 14px;
+
+$tablet: 768px;
+$pc: 1024px;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    mix-blend-mode: normal;
+}
+
+.container {
+    background-color: #5CC5B1;
+    width: 100vw;
+    height: 100vh;
+    padding: 7% 6%;
+}
+.page {
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(360deg, #6ED4FF 1.75%, #8FFFA3 95.51%);
+    border-radius: 43px;
+    position: relative;
+    overflow: hidden;
+    & > div,
+    & > form {
+        position: absolute;
+    }
+    &__bgr_rectangle {
+        background: #FFFFFF;
+        opacity: 0.25;
+        border-radius: 55px;
+    }
+    &__bgr_rect1 {
+        width: 31%;
+        height: 45%;
+        top: -4%;
+        left: -9.5%;
+    }
+    &__bgr_rect2 {
+        width: 18.5%;
+        height: 30%;
+        top: 19.3%;
+        left: -5.7%;
+    }
+    &__bgr_rect3 {
+        width: 31%;
+        height: 45%;
+        top: 49%;
+        left: 42%;
+    }
+    &__bgr_rect4 {
+        width: 20%;
+        height: 33.8%;
+        top: 75%;
+        left: 30%;
+    }
+    &__cart {
+        background-image: url(../img/cart.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        width: 10%;
+        height: 15%;
+        top: 11%;
+        left: 38%;
+    }
+    &__text {
+        top: 51%;
+        left: 7%;
+        &_h1, &_h5 {
+            color: #ffffff;
+        }
+        &_h1 {
+            font-size: $font-size-big;
+            line-height: $font-size-big * 2;
+        }
+        &_h5 {
+            font-size: $font-size-medium;
+            font-weight: 400;
+        }
+    }
+    &__bgr_login1,
+    &__bgr_login2,
+    &__login {
+        height: 90%;
+        width: 47%;
+        border-radius: 41px;
+        background: #FFFFFF;
+        right: 0;
+    }
+    &__bgr_login1 {
+        top: 0;
+        opacity: 0.48;
+    }
+    &__bgr_login2 {
+        top: 5%;
+        opacity: 0.73;
+    }
+    &__login {
+        bottom: 0;
+        padding: 6%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        & input,
+        & button,
+        &__submit {
+            display: block;
+            outline: none;
+            border: none;
+            width: 100%;
+            height: 7.5%;
+            border-radius: 27px;
+            font-size: $font-size-small;
+            padding: 0 10%;
+        }
+        &_h1, &_h5, &_h7 {
+            text-align: center;
+        }
+        &_h1 {
+            font-size: $font-size-big;
+            color: #000000;
+        }
+        &_h5 {
+            font-size: $font-size-medium;
+            line-height: $font-size-medium * 1.2;
+            font-weight: 400;
+            color: #808080;
+            margin-bottom: $font-size-medium * 1.5;
+        }
+        &_h7 {
+            font-size: $font-size-small;
+            color: #8B8B8B;
+        }
+        &_email,
+        &_pass {
+            background: #F0F0F0;
+        }
+        &__submit,
+        &__twitter,
+        &__facebook {
+            color: #ffffff;
+            display: flex;
+            & i {
+                font-size: 20px;
+                font-weight: 600;
+            }
+        }
+        &__submit {
+            background: linear-gradient(90deg, #6ED4FF 34.25%, #8FFFA3 96.88%);
+            opacity: 0.79;
+            align-items: center;
+            & span {
+                flex-grow: 1;
+                text-align: center;
+                text-transform: uppercase;
+                letter-spacing: 4.2px;
+            }
+        }
+        &__twitter,
+        &__facebook {
+            text-align: left;
+            & i {
+                margin-right: $font-size-small;
+            }
+        }
+        &__twitter {
+            background: linear-gradient(270deg, #67E4FE 0%, #35ABD3 52.4%);
+        }
+        &__facebook {
+            background: linear-gradient(270deg, #3FA3E8 11.18%, #277EBB 63.9%);
+        }
+    }
+}

@@ -1,0 +1,212 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+  mix-blend-mode: normal;
+}
+
+.container {
+  background-color: #5CC5B1;
+  width: 100vw;
+  height: 100vh;
+  padding: 7% 6%;
+}
+
+.page {
+  width: 100%;
+  height: 100%;
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(1.75%, #6ED4FF), color-stop(95.51%, #8FFFA3));
+  background: linear-gradient(360deg, #6ED4FF 1.75%, #8FFFA3 95.51%);
+  border-radius: 43px;
+  position: relative;
+  overflow: hidden;
+}
+
+.page > div,
+.page > form {
+  position: absolute;
+}
+
+.page__bgr_rectangle {
+  background: #FFFFFF;
+  opacity: 0.25;
+  border-radius: 55px;
+}
+
+.page__bgr_rect1 {
+  width: 31%;
+  height: 45%;
+  top: -4%;
+  left: -9.5%;
+}
+
+.page__bgr_rect2 {
+  width: 18.5%;
+  height: 30%;
+  top: 19.3%;
+  left: -5.7%;
+}
+
+.page__bgr_rect3 {
+  width: 31%;
+  height: 45%;
+  top: 49%;
+  left: 42%;
+}
+
+.page__bgr_rect4 {
+  width: 20%;
+  height: 33.8%;
+  top: 75%;
+  left: 30%;
+}
+
+.page__cart {
+  background-image: url(../img/cart.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 10%;
+  height: 15%;
+  top: 11%;
+  left: 38%;
+}
+
+.page__text {
+  top: 51%;
+  left: 7%;
+}
+
+.page__text_h1, .page__text_h5 {
+  color: #ffffff;
+}
+
+.page__text_h1 {
+  font-size: 52px;
+  line-height: 104px;
+}
+
+.page__text_h5 {
+  font-size: 24px;
+  font-weight: 400;
+}
+
+.page__bgr_login1, .page__bgr_login2, .page__login {
+  height: 90%;
+  width: 47%;
+  border-radius: 41px;
+  background: #FFFFFF;
+  right: 0;
+}
+
+.page__bgr_login1 {
+  top: 0;
+  opacity: 0.48;
+}
+
+.page__bgr_login2 {
+  top: 5%;
+  opacity: 0.73;
+}
+
+.page__login {
+  bottom: 0;
+  padding: 6%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.page__login input,
+.page__login button, .page__login__submit {
+  display: block;
+  outline: none;
+  border: none;
+  width: 100%;
+  height: 7.5%;
+  border-radius: 27px;
+  font-size: 14px;
+  padding: 0 10%;
+}
+
+.page__login_h1, .page__login_h5, .page__login_h7 {
+  text-align: center;
+}
+
+.page__login_h1 {
+  font-size: 52px;
+  color: #000000;
+}
+
+.page__login_h5 {
+  font-size: 24px;
+  line-height: 28.8px;
+  font-weight: 400;
+  color: #808080;
+  margin-bottom: 36px;
+}
+
+.page__login_h7 {
+  font-size: 14px;
+  color: #8B8B8B;
+}
+
+.page__login_email, .page__login_pass {
+  background: #F0F0F0;
+}
+
+.page__login__submit, .page__login__twitter, .page__login__facebook {
+  color: #ffffff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.page__login__submit i, .page__login__twitter i, .page__login__facebook i {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.page__login__submit {
+  background: -webkit-gradient(linear, left top, right top, color-stop(34.25%, #6ED4FF), color-stop(96.88%, #8FFFA3));
+  background: linear-gradient(90deg, #6ED4FF 34.25%, #8FFFA3 96.88%);
+  opacity: 0.79;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.page__login__submit span {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 4.2px;
+}
+
+.page__login__twitter, .page__login__facebook {
+  text-align: left;
+}
+
+.page__login__twitter i, .page__login__facebook i {
+  margin-right: 14px;
+}
+
+.page__login__twitter {
+  background: -webkit-gradient(linear, right top, left top, from(#67E4FE), color-stop(52.4%, #35ABD3));
+  background: linear-gradient(270deg, #67E4FE 0%, #35ABD3 52.4%);
+}
+
+.page__login__facebook {
+  background: -webkit-gradient(linear, right top, left top, color-stop(11.18%, #3FA3E8), color-stop(63.9%, #277EBB));
+  background: linear-gradient(270deg, #3FA3E8 11.18%, #277EBB 63.9%);
+}
